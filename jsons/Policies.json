@@ -2,7 +2,7 @@
 	{
 		"name": "Tradition",
 		"era": "Ancient era",
-		"uniques": ["[+3 Culture] [in capital]","[-25]% Culture cost of natural border growth [in all cities]","Unlocks building the Hanging Gardens"],
+		"uniques": ["Notified of new Barbarian encampments","[+3 Culture] [in capital]","[-25]% Culture cost of natural border growth [in all cities]","Unlocks building the Hanging Gardens"],
 		"policies": [
 			{
 				"name": "Aristocracy",
@@ -45,7 +45,7 @@
 	{
 		"name": "Liberty",
 		"era": "Ancient era",
-		"uniques": ["[+1 Culture] [in all cities]","Unlocks building the Pyramids"],
+		"uniques": ["Notified of new Barbarian encampments","[+1 Culture] [in all cities]","Unlocks building the Pyramids"],
 		"policies": [
 			{
 				"name": "Republic",
@@ -163,20 +163,19 @@
 	{
 		"name": "Piety",
 		"era": "Ancient era",
-		"uniques": ["[+100]% Production when constructing [Temple] buildings [in all cities]",
+		"uniques": ["Notified of new Barbarian encampments","[+100]% Production when constructing [Temple] buildings [in all cities]",
 			"[+100]% Production when constructing [Shrine] buildings [in all cities]",
-			"[+2 Culture] [in capital]","Unlocks building the Great Mosque of Djenne"],
+			"[+1 Culture, +1 Faith] [in capital]","Unlocks building the Great Mosque of Djenne"],
 		"policies": [
 			{
 				"name": "Mandate Of Heaven",
-				"uniques": ["[+1 Happiness] from every [Temple]","[+1 Culture] [in capital]","Cost of purchasing [Culture] buildings reduced by [20]%"],
+				"uniques": ["[+1 Happiness] from every [Temple]","[+1 Faith] [in capital]","[Faith] cost of purchasing items in cities [-20]%"],
 				"row": 1,
 				"column": 1
 			},
 			{
 				"name": "Organized Religion",
-				"uniques": ["[+1 Culture] from every [Shrine]","[+1 Culture] from every [Temple]",
-					"[+1 Culture] from every [Monastery]"],
+				"uniques": ["[+1 Culture, +1 Faith] from every [Shrine]","[+1 Culture, +1 Faith] from every [Temple]"],
 				"row": 1,
 				"column": 3
 			},
@@ -188,14 +187,14 @@
 			},
 			{
 				"name": "Reformation",
-				"uniques": ["[-15]% Culture cost of natural border growth [in all cities]"],
+				"uniques": ["[-15]% Culture cost of natural border growth [in all cities]","[+1 Food, +1 Production, +1 Faith, +1 Culture, +1 Gold] from every [Holy site]"]
 				"requires": ["Organized Religion"],
 				"row": 2,
 				"column": 2
 			},
 			{
 				"name": "Religious Tolerance",
-				"uniques": ["[+1 Culture] [in all cities]","[+25]% [Science] from every [Grand Temple]","[+2 Science] from every [Temple]"],
+				"uniques": ["[+1 Culture, +1 Faith] [in all cities]","[+25]% [Science] from every [Grand Temple]","[+2 Science] from every [Temple]"],
 				"requires": ["Organized Religion"],
 				"row": 2,
 				"column": 4
@@ -221,7 +220,7 @@
 			},
 			{
 				"name": "Cultural Exchange",
-				"uniques": ["[+1 Culture] from every [Great Improvement]","[+1 Culture] from every [Trading post]","[+1 Culture] from every [Brazilwood Camp]","[+1 Culture] from every [Caer]","[+1 Culture] from every [Moai]","[+1 Culture] from every [Chateau]"],
+				"uniques": ["Free [Great Artist] appears","[+1 Culture] from every [Great Improvement]","[+1 Culture] from every [Trading post]","[+1 Culture] from every [Brazilwood Camp]","[+1 Culture] from every [Caer]","[+1 Culture] from every [Moai]","[+1 Culture] from every [Chateau]"],
 				"requires": ["Cultural Centers"],
 				"row": 2,
 				"column": 2
@@ -298,7 +297,7 @@
 
 			{
 				"name": "Patronage Complete",
-				"uniques": ["Food and Culture from Friendly City-States are increased by 50%","Free Great Person"],
+				"uniques": ["[+75]% [Food] from City States","[+75]% [Culture] from City States","[+75]% [Faith] from City States","Militaristic City-States grant units [2] times as fast when you are at war with a common nation"],
 			}
 		]
 	},
@@ -345,7 +344,7 @@
 			},
 			{
 				"name": "Exploration Complete",
-				"uniques": ["[3] free [Great Admiral] units appear","[+1] Happiness from each type of luxury resource","May buy [Great Admiral] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
+				"uniques": ["Free [Great Admiral] appears","[+1] Happiness from each type of luxury resource","May buy [Great Admiral] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
 			}
 		]
 	},
@@ -392,7 +391,7 @@
 			},
 			{
 				"name": "Rationalism Complete",
-				"uniques": ["[10]% [Science] <while the empire is happy>","May buy [Great Scientist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
+				"uniques": ["[10]% [Science] <while the empire is happy>"]
 			}
 		]
 	},
@@ -415,7 +414,7 @@
 			},
 			{
 				"name": "Entrepreneurship",
-				"uniques": ["[-50]% maintenance on road & railroads","Provides 2 Trade Routes"],
+				"uniques": ["[-50]% maintenance on road & railroads","Provides 2 Trade Routes","[-25]% maintenance cost for buildings [in all cities]"],
 				"requires": ["Silk Road"],
 				"row": 2,
 				"column": 1
@@ -599,7 +598,7 @@
 			},
 			{
 				"name": "New Deal",
-				"uniques": ["[+100]% Yield from every [Great Improvement]"],
+				"uniques": ["[+5 Science] from every [Academy]","[+5 Faith] from every [Holy site]","[+5 Culture] from every [Landmark]","[+5 Production] from every [Manufactory]","[+5 Gold] from every [Customs house]","[+1 Faith, +1 Science, +1 Production, +1 Culture, +1 Food] from every [Sacred Grove]"],
 				"requires": ["Capitalism"],
 				"row": 2,
 				"column": 3

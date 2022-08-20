@@ -21,7 +21,6 @@
  "type": "Land",
  "food": 2,
  "movementCost": 1,
- "defenceBonus": -0.1,
  "RGB": [97,171,58],
  "uniques":
   ["Occurs at temperature between [-0.4] and [0.1] and humidity between [0.2] and [0.4]",
@@ -47,7 +46,6 @@
  "type": "Land",
  "food": 1, "production": 1,
  "movementCost": 1,
- "defenceBonus": -0.1,
  "RGB": [168,185,102],
  "uniques":
   ["Occurs at temperature between [-0.4] and [-0.1] and humidity between [0] and [0.2]",
@@ -76,7 +74,6 @@
  "type": "Land",
  "food": 1,
  "movementCost": 1,
- "defenceBonus": -0.1,
  "RGB": [189,204,191],
  "uniques":
   ["Occurs at temperature between [-0.9] and [-0.6] and humidity between [0.8] and [1]",
@@ -94,7 +91,6 @@
 {"name": "Desert",
  "type": "Land",
  "movementCost": 1,
- "defenceBonus": -0.1,
  "RGB": [ 230, 230, 113],
  "uniques":
   ["Occurs at temperature between [-0.1] and [0.9] and humidity between [0] and [0.2]",
@@ -111,7 +107,6 @@
 {"name": "Snow",
  "type": "Land",
  "movementCost": 1,
- "defenceBonus": -0.1,
  "RGB": [231, 242, 249],
  "uniques":
   ["Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
@@ -204,7 +199,7 @@
  "occursOn": ["Plains","Grassland"],
  "uniques":
   ["Rough terrain",
-   "Blocks line-of-sight from tiles at same elevation",
+   "Blocks line-of-sight from tiles at same elevation","Provides a one-time Production bonus to the closest city when cut down",
    "[25]% Chance to be destroyed by nukes", "[50]% Chance to be destroyed by nukes",
    "[-1] to Fertility for Map Generation",
    "A Region is formed with at least [30]% [Jungle] tiles, with priority [2]",
@@ -222,7 +217,7 @@
  "defenceBonus": -0.15,
  "occursOn": ["Grassland"],
  "uniques":
-  ["Rare feature",
+  ["Rare feature","Provides a one-time Production bonus to the closest city when cut down",
    "[-2] to Fertility for Map Generation",
    "Every [9] tiles with this terrain will receive a major deposit of a strategic resource."],
    "civilopediaText": [{"text":"Only Polders can be built here",

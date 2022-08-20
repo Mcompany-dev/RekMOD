@@ -216,39 +216,39 @@
 	// Great Person improvements
 	{
 		"name": "Academy",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Marsh","Snow"],
 		"science": 8,
 		"uniques": ["Great Improvement","[+2 Science] <after discovering [Scientific Theory]>",
 			"[+2 Science] <after discovering [Atomic Theory]>","Removes removable features when built"]
 	},
 	{
 		"name": "Holy site",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Marsh","Snow"],
 		"faith": 6,
 		"uniques": ["Great Improvement","Removes removable features when built"]
 	},
 	{
 		"name": "Landmark",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Marsh","Snow"],
 		"culture": 6,
 		"uniques": ["Great Improvement","Removes removable features when built"]
 	},
 	{
 		"name": "Manufactory",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Marsh","Snow"],
 		"production": 6,
 		"food": 1,
 		"uniques": ["Great Improvement","[+3 Production] <after discovering [Chemistry]>","Removes removable features when built"]
 	},
 	{
 		"name": "Customs house",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Marsh","Snow"],
 		"gold": 4,
 		"uniques": ["Great Improvement","[+4 Gold] <after discovering [Economics]>","Removes removable features when built"]
 	},
 	{
 		"name": "Citadel",
-		"terrainsCanBeBuiltOn": ["Land"],
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Marsh","Snow"],
 		"uniques": ["Gives a defensive bonus of [100]%","Adjacent units ending their turn take [30] damage","Great Improvement",
 			"Can be built just outside your borders","Constructing it will take over the tiles around it and assign them to your closest city","Removes removable features when built"],
 			"civilopediaText": [{text:"Constructing it will take over the tiles around it and assign them to your closest city"}]
@@ -268,19 +268,21 @@
 	},
 		{
 		"name": "Sacred Grove",
-		"uniqueTo": "Lithuania",
-		"terrainsCanBeBuiltOn": ["Grassland","Plains","Tundra","Desert","Snow"],
+		"uniqueTo":"Lithuania",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains","Marsh","Snow"],
 		"science": 1,
 		"food": 1,
 		"production": 1,
 		"culture": 1,
-		"uniques": ["Great Improvement","[+1 Science, +1 Production, +1 Culture, +1 Food] <after discovering [Telecommunications]>",
-			"[+1 Science, +1 Production, +1 Culture, +1 Food] <after discovering [Computers]>",
-			"[+1 Science, +1 Production, +1 Culture, +1 Food] <after discovering [Plastics]>",
-			"[+1 Science, +1 Production, +1 Culture, +1 Food] <after discovering [Archaeology]>",
-			"[+1 Science, +1 Production, +1 Culture, +1 Food] <after discovering [Acoustics]>",
-			"[+1 Science, +1 Production, +1 Culture, +1 Food] <after discovering [Theology]>",
-			"[+1 Science, +1 Production, +1 Culture, +1 Food] <after discovering [Philosophy]>"]
+		"faith": 1,
+		"uniques": ["Great Improvement",
+			"[+1 Science, +1 Production, +1 Culture, +1 Food, +1 Faith] <after discovering [Telecommunications]>",
+			"[+1 Science, +1 Production, +1 Culture, +1 Food, +1 Faith] <after discovering [Computers]>",
+			"[+1 Science, +1 Production, +1 Culture, +1 Food, +1 Faith] <after discovering [Plastics]>",
+			"[+1 Science, +1 Production, +1 Culture, +1 Food, +1 Faith] <after discovering [Archaeology]>",
+			"[+1 Science, +1 Production, +1 Culture, +1 Food, +1 Faith] <after discovering [Acoustics]>",
+			"[+1 Science, +1 Production, +1 Culture, +1 Food, +1 Faith] <after discovering [Theology]>",
+			"[+1 Science, +1 Production, +1 Culture, +1 Food, +1 Faith] <after discovering [Philosophy]>","Removes removable features when built"]
 	},
 	{
 		"name": "Chateau",

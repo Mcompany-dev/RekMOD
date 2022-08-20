@@ -5,13 +5,19 @@
 		"cost": 0,
 		"faith": 1,
 		"culture": 3,
-		"specialistSlots": {"Artist": 1},
 		"uniques": ["Unbuildable"]
 	},
 	{
+		"name":"Gurdwara",
+		"cost": 0,
+		"faith": 3,
+		"culture": 1,
+		"uniques": ["Unbuildable"]
+	}
+	{
 		"name": "Mosque",
 		"cost": 0,
-		"culture": 2,
+		"culture": 1,
 		"faith": 3,
 		"happiness": 1,
 		"uniques": ["Unbuildable"]
@@ -23,15 +29,7 @@
 		"happiness": 1,
 		"uniques": ["Unbuildable","[10]% Food is carried over after population increases [in this city]"]
 	},
-			{
-		"name": "Gurdwara",
-		"cost": 0,
-		"culture": 1,
-		"faith": 5,
-		"happiness": 1,
-		"uniques": ["Unbuildable"]
-	},
-				{
+		{
 		"name": "Synagogue",
 		"cost": 0,
 		"culture": 1,
@@ -49,10 +47,7 @@
 		{
 		"name": "Mandir",
 		"cost": 0,
-		"culture": 2,
-		"faith": 3,
-		"happiness": 1,
-		"uniques": ["Unbuildable","[+1 Faith, +1 Culture] from [Luxury resource] tiles [in this city]"]
+		"uniques": ["Unbuildable","[+1 Food, +1 Production] from [Luxury resource] tiles [in this city]"]
 	},
     {
         "name": "~limit",
@@ -97,6 +92,13 @@
         "cost": 1,
         "uniques": ["Unsellable","Will not be displayed in Civilopedia","Unbuildable"]
     },
+
+		{
+		"name": "Flatland Food",
+		"cost":-1,
+		"food":1,
+		"uniques":["Must not be on [Hill]","Will not be displayed in Civilopedia","Unsellable"]
+		},
 		    {
         "name": "Classical Trade Routes",
         "cost": -1,
@@ -214,7 +216,8 @@
 		"uniqueTo": "Golden Horde",
         "cost": 1,
 		"requiredTech": "Philosophy",
-        "uniques": ["Gain a free [Jarliq] [in this city]","Requires a [Palace] [in this city]","Will not be displayed in Civilopedia","Unsellable","Free [Great Artist] appears"]
+		"requiredBuilding":"Palace",
+        "uniques": ["Gain a free [Jarliq] [in this city]","Will not be displayed in Civilopedia","Unsellable","Free [Great Artist] appears"]
     },
 			    {
         "name": "Boers Bonus",
@@ -246,7 +249,8 @@
         "cost": 1,
 		"culture": 1,
 		"isNationalWonder": true,
-        "uniques": ["Unbuildable","Requires a [Palace] [in this city]","Will not be displayed in Civilopedia","[+15 Culture] <after discovering [Acoustics]>"]
+		"requiredBuilding":"Palace",
+        "uniques": ["Unbuildable","Will not be displayed in Civilopedia","[+15 Culture] <after discovering [Acoustics]>"]
     },
 					    {
         "name": "Italy Liberty",
@@ -385,9 +389,7 @@
 		"culture": 1,
 		"cityStrength": 2,
 		"cost": 1,
-		"uniques": ["Indicates the capital city","[-1 Gold] from every [River]","Double quantity of [Horses] produced","Double quantity of [Iron] produced",
-					"Double quantity of [Coal] produced","Double quantity of [Oil] produced",
-					"Double quantity of [Aluminum] produced","[-1 Culture] from every [Archaeological Dig]"]
+		"uniques": ["Indicates the capital city"]
 	},
 	    {
         "name": "Orszaggyules",
@@ -418,7 +420,8 @@
         "culture": 2,
         "cost": 20,
         "hurryCostModifier": 40,
-		"uniques": ["Destroyed when the city is captured"]
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredTech":"Pottery",
     },
 	    {
         "name": "Shrine",
@@ -995,28 +998,28 @@
         "faith": 2,
         "maintenance": 2,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Shrine",
+        "requiredBuilding":"Shrine",
         "requiredTech": "Philosophy"
     },
-    {
+	    {
         "name": "Amphitheater",
         "culture": 2,
         "specialistSlots": {"Artist": 1},
         "maintenance": 2,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Monument",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Monument",
         "requiredTech": "Drama and Poetry"
     },
-    {
-	"name": "Stave Church",
+	    {
+		"name": "Stave Church",
         "replaces": "Temple",
-	"uniqueTo": "Norway",
+		"uniqueTo": "Norway",
         "faith": 1,
         "specialistSlots": {"Artist": 1},
         "hurryCostModifier": 25,
-        "requiredBuilding": "Shrine",
         "uniques": ["[+1 Faith] from [Water resource] tiles [in this city]"],
+	"requiredBuilding":"Shrine",
         "requiredTech": "Philosophy"
     },
     {
@@ -1026,8 +1029,8 @@
         "faith": 2,
         "happiness": 2,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Shrine",
         "uniques": ["Doubles Gold given to enemy if city is captured"],
+	"requiredBuilding":"Shrine",
         "requiredTech": "Philosophy"
     },
 		    {
@@ -1037,9 +1040,9 @@
         "faith": 2,
         "maintenance": 1,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Shrine",
-        "uniques": ["[+5]% [Science] [in this city]"],
+		"uniques": ["[+5]% [Science] [in this city]"],
         "requiredTech": "Philosophy"
+	"requiredBuilding":"Shrine",
     },
 	    {
         "name": "Odeon",
@@ -1049,8 +1052,8 @@
         "gold": 1,
         "specialistSlots": {"Artist": 1},
         "hurryCostModifier": 25,
-        "requiredBuilding": "Monument",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Monument",
         "requiredTech": "Philosophy"
     },
 		    {
@@ -1058,13 +1061,13 @@
         "replaces": "Amphitheater",
         "uniqueTo": "Byzantium",
         "culture": 2,
-	"faith": 2,
-	"happiness": 1,
+		"faith": 2,
+		"happiness": 1,
         "maintenance": 1,
         "specialistSlots": {"Artist": 1},
         "hurryCostModifier": 25,
-        "requiredBuilding": "Monument",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Monument",
         "requiredTech": "Philosophy"
     },
 		    {
@@ -1072,14 +1075,14 @@
         "replaces": "Temple",
         "uniqueTo": "Israel",
         "faith": 2,
-	"cost": 120,
+		"cost": 120,
         "food": 1,
-	"production": 1,
-	"maintenance": 2,
+		"production": 1,
+		"maintenance": 2,
         "specialistSlots": {"Artist": 1},
         "hurryCostModifier": 25,
-        "requiredBuilding": "Shrine",
-        "requiredTech": "Philosophy"
+        "requiredTech": "Philosophy",
+	"requiredBuilding":"Shrine"
     },
     {
         "name": "Mud Pyramid Mosque",
@@ -1087,7 +1090,7 @@
         "uniqueTo": "Songhai",
         "faith": 4,
         "hurryCostModifier": 15,
-        "requiredBuilding": "Shrine",
+        "requiredBuilding":"Shrine",
         "requiredTech": "Philosophy"
     },
     {
@@ -1470,8 +1473,8 @@
         "maintenance": 2,
         "hurryCostModifier": 15,
         "specialistSlots": {"Scientist": 2},
-        "requiredBuilding": "Library",
         "uniques": ["[+2 Science] from [Jungle] tiles [in this city]","[+33]% [Science] [in this city]"],
+	"requiredBuilding":"Library",
         "requiredTech": "Education"
     },
     {
@@ -1483,8 +1486,8 @@
         "hurryCostModifier": 15,
         "percentStatBonus": {"science": 33},
         "specialistSlots": {"Scientist": 2},
-        "requiredBuilding": "Library",
         "uniques": ["[+2 Science] from [Jungle] tiles [in this city]","[+33]% [Science] [in this city]"],
+	"requiredBuilding":"Library",
         "requiredTech": "Education"
     },
 	    {
@@ -1496,8 +1499,8 @@
         "hurryCostModifier": 15,
         "percentStatBonus": {"science": 33},
         "specialistSlots": {"Scientist": 2},
-        "requiredBuilding": "Library",
         "uniques": ["[+2 Science] from [Jungle] tiles [in this city]","[+2 Science] from [Oasis] tiles [in this city]","[+1 Science] from [Flood plains] tiles [in this city]","[+33]% [Science] [in this city]"],
+	"requiredBuilding":"Library",
         "requiredTech": "Education"
     },
     {
@@ -1515,20 +1518,20 @@
         "cityStrength": 7,
         "cityHealth": 25,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Walls",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Walls",
         "requiredTech": "Chivalry"
     },
-    {
-	"name": "Alcazaba",
-	"uniqueTo": "The Moors",
+	    {
+		"name": "Alcazaba",
+		"uniqueTo": "The Moors",
         "replaces": "Castle",
         "cityStrength": 7,
         "cityHealth": 25,
-	"science": 3,
+		"science": 3,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Walls",
-	"uniques": ["[+10]% growth [in this city]","Destroyed when the city is captured"],
+		"uniques": ["[+10]% growth [in this city]","Destroyed when the city is captured"],
+	"requiredBuilding":"Walls",
         "requiredTech": "Chivalry"
     },
     {
@@ -1596,8 +1599,8 @@
         "name": "Armory",
         "hurryCostModifier": 25,
         "maintenance": 1,
-        "requiredBuilding": "Barracks",
-	"uniques": ["Destroyed when the city is captured","New [Military] units start with [15] Experience [in this city]"],
+		"uniques": ["Destroyed when the city is captured","New [Military] units start with [15] Experience [in this city]"],
+	"requiredBuilding":"Barracks",
         "requiredTech": "Steel"
     },
 	    {
@@ -1637,11 +1640,11 @@
         "specialistSlots": {"Artist": 1},
         "hurryCostModifier": 10,
         "maintenance": 2,
-        "requiredBuilding": "Amphitheater",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Amphitheater",
         "requiredTech": "Acoustics"
     },
-    {
+	    {
         "name": "Ceilidh Hall", 
         "replaces": "Opera House",
         "uniqueTo": "Scotland",
@@ -1651,11 +1654,11 @@
         "cost": 200,
         "hurryCostModifier": 25,
         "maintenance": 2,
-        "requiredBuilding": "Amphitheater",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Amphitheater",
         "requiredTech": "Acoustics"
     },
-    {
+	    {
         "name": "Staatsmuseum", 
         "replaces": "Opera House",
         "uniqueTo": "Boers",
@@ -1664,8 +1667,8 @@
         "cost": 200,
         "hurryCostModifier": 25,
         "maintenance": 2,
-        "requiredBuilding": "Amphitheater",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Amphitheater",
         "requiredTech": "Acoustics"
     },
     {
@@ -1682,20 +1685,20 @@
         "gold": 2,
         "specialistSlots": {"Merchant": 1},
         "hurryCostModifier": 15,
-        "requiredBuilding": "Market",
         "uniques": ["[+25]% [Gold] [in this city]"],
+	"requiredBuilding":"Market",
         "requiredTech": "Banking"
     },
-    {
-	"name": "Canton Factory",
+	    {
+		"name": "Canton Factory",
         "replaces": "Bank",
-	"uniqueTo": "Manchuria",
+		"uniqueTo": "Manchuria",
         "gold": 4,
-	"cost": 125,
+		"cost": 125,
         "specialistSlots": {"Merchant": 2},
         "hurryCostModifier": 15,
-        "requiredBuilding": "Market",
         "uniques": ["[+35]% [Gold] [in this city]"],
+	"requiredBuilding":"Market",
         "requiredTech": "Banking"
     },
 		    {
@@ -1716,20 +1719,20 @@
         "specialistSlots": {"Merchant": 1},
         "happiness": 2,
         "hurryCostModifier": 15,
-        "requiredBuilding": "Market",
         "uniques": ["[+25]% [Gold] [in this city]"],
+	"requiredBuilding":"Market",
         "requiredTech": "Banking"
     },
-    {
+	    {
         "name": "Convict Penitentiary",
         "replaces": "Bank",
         "uniqueTo": "Australia",   
         "gold": 2,
         "specialistSlots": {"Merchant": 1},
         "hurryCostModifier": 15,
-	"cost": 250,
-        "requiredBuilding": "Market",
+		"cost": 250,
         "uniques": ["[+30]% [Gold] [in this city]","[+5]% [Production] [in this city]"],
+	"requiredBuilding":"Market",
         "requiredTech": "Machinery"
     },
     {
@@ -1739,9 +1742,9 @@
         "gold": 2,
         "specialistSlots": {"Merchant": 1},
         "hurryCostModifier": 15,
-        "requiredBuilding": "Market",
         "uniques": ["+5% Production for every Trade Route with a City-State in the empire",
             "[+25]% [Gold] [in this city]"],
+	"requiredBuilding":"Market",
         "requiredTech": "Banking"
     },
 	    {
@@ -1768,20 +1771,20 @@
         "happiness": 2,
         "hurryCostModifier": 10,
         "maintenance": 2,
-	"cost": 200,
-        "requiredBuilding": "Colosseum",
+		"cost": 200,
+	"requiredBuilding":"Colosseum",
         "requiredTech": "Printing Press"
     },
-    {
+	    {
         "name": "Irish Pub",
-	"replaces": "Zoo",
-	"uniqueTo": "Ireland",
+		"replaces": "Zoo",
+		"uniqueTo": "Ireland",
         "happiness": 3,
-	"food": 3,
+		"food": 3,
         "hurryCostModifier": 10,
-	"cost": 225,
-        "requiredBuilding": "Colosseum",
+		"cost": 225,
         "uniques": ["[+1 Production] from [Coffee] tiles [in this city]","[+1 Production] from [Wine] tiles [in this city]","[+1 Production] from [Tea] tiles [in this city]"],
+	"requiredBuilding":"Colosseum",
         "requiredTech": "Printing Press"
     },
 	    {
@@ -1819,21 +1822,21 @@
         "specialistSlots": {"Artist": 2},
         "maintenance": 3,
         "hurryCostModifier": 0,
-        "requiredBuilding": "Amphitheater",
-        "uniques": ["Destroyed when the city is captured","[+10]% [Culture] [in this city]"],
+		"uniques": ["Destroyed when the city is captured","[+10]% [Culture] [in this city]"],
+	"requiredBuilding":"Amphitheater",
         "requiredTech": "Archaeology"
     },
-    {
+	    {
         "name": "Basilica",
-	"replaces": "Museum",
-	"uniqueTo": "Italy",
+		"replaces": "Museum",
+		"uniqueTo": "Italy",
         "culture": 5,
         "specialistSlots": {"Artist": 2},
-	"greatPersonPoints": {"Great Artist":2},
+		"greatPersonPoints": {"Great Artist":2},
         "maintenance": 3,
         "hurryCostModifier": 0,
-        "requiredBuilding": "Amphitheater",
-	"uniques": ["Destroyed when the city is captured","[+10]% [Culture] [in this city]"],
+		"uniques": ["Destroyed when the city is captured","[+10]% [Culture] [in this city]"],
+	"requiredBuilding":"Amphitheater",
         "requiredTech": "Industrialization"
     },
     {
@@ -1872,9 +1875,9 @@
         "name": "Seaport",
         "hurryCostModifier": 25,
         "maintenance": 3,
-        "requiredBuilding": "Harbor",
 	    "uniques": ["[+1 Production, +1 Gold] from [Water resource] tiles [in this city]",
-		"[+15]% Production when constructing [Water] units [in this city]","Must be next to [Coast]"],
+		"[+15]% Production when constructing [Water] units [in this city]","Must be next to [Coast]",
+        "Requires a [Harbor] [in this city]"],
         "requiredTech": "Navigation"
     },
     {
@@ -1945,8 +1948,8 @@
         "maintenance": 0,
         "cityHealth": 25,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Castle",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Castle",
         "requiredTech": "Metallurgy"
     },
     {
@@ -1969,8 +1972,8 @@
         "specialistSlots": {"Scientist": 1},
         "maintenance": 3,
         "hurryCostModifier": 0,
-        "requiredBuilding": "University",
         "uniques": ["[+1 Science] per [2] population [in this city]"],
+	"requiredBuilding":"University",
         "requiredTech": "Scientific Theory"
     },
 	    {
@@ -1983,8 +1986,8 @@
         "specialistSlots": {"Scientist": 1},
         "maintenance": 3,
         "hurryCostModifier": 0,
-        "requiredBuilding": "University",
         "uniques": ["[+1 Science] per [2] population [in this city]"],
+	"requiredBuilding":"University",
         "requiredTech": "Scientific Theory"
     },
     {
@@ -1992,10 +1995,10 @@
         "production": 4,
         "specialistSlots": {"Engineer": 2},
         "maintenance": 3,
-	"cost": 360,
+		"cost": 360,
         "hurryCostModifier": 0,
-        "requiredBuilding": "Workshop",
         "uniques": ["[+10]% [Production] [in this city]","Consumes [1] [Coal]"],
+	"requiredBuilding":"Workshop",
         "requiredTech": "Industrialization"
     },
 	    {
@@ -2007,8 +2010,8 @@
         "maintenance": 3,
 		"cost": 270,
         "hurryCostModifier": 0,
-        "requiredBuilding": "Workshop",
         "uniques": ["[+10]% [Production] [in this city]"],
+	"requiredBuilding":"Workshop",
         "requiredTech": "Industrialization"
     },
     {
@@ -2025,8 +2028,8 @@
         "name": "Military Academy",
         "hurryCostModifier": 0,
         "maintenance": 1,
-        "requiredBuilding": "Armory",
-	"uniques": ["Destroyed when the city is captured","New [Military] units start with [15] Experience [in this city]"],
+		"uniques": ["Destroyed when the city is captured","New [Military] units start with [15] Experience [in this city]"],
+	"requiredBuilding":"Armory",
         "requiredTech": "Military Science"
     },
     {
@@ -2043,7 +2046,7 @@
         "food": 5,
         "maintenance": 2,
         "hurryCostModifier": 0,
-        "requiredBuilding": "Aqueduct",
+	"requiredBuilding":"Aqueduct",
         "requiredTech": "Biology"
     },
     {
@@ -2051,8 +2054,8 @@
         "gold": 3,
         "specialistSlots": {"Merchant": 2},
         "hurryCostModifier": 15,
-        "requiredBuilding": "Bank",
         "uniques": ["[+25]% [Gold] [in this city]"],
+	"requiredBuilding":"Bank",
         "requiredTech": "Electricity"
     },
 	    {
@@ -2063,8 +2066,8 @@
 		"happiness": 2,
         "specialistSlots": {"Merchant": 2},
         "hurryCostModifier": 15,
-        "requiredBuilding": "Bank",
         "uniques": ["[+25]% [Gold] [in this city]","[+1 Gold] from [River] tiles [in this city]"],
+	"requiredBuilding":"Bank",
         "requiredTech": "Electricity"
     },
 		    {
@@ -2101,8 +2104,8 @@
     {
         "name": "Broadcast Tower",
         "culture": 3,
-        "requiredBuilding": "Opera House",
         "uniques": ["Destroyed when the city is captured","[+10]% [Culture] [in this city]"],
+	"requiredBuilding":"Opera House",
         "maintenance": 3,
         "requiredTech": "Radio"
     },    
@@ -2123,8 +2126,8 @@
         "cityHealth": 25,
         "maintenance": 0,
         "hurryCostModifier": 25,
-        "requiredBuilding": "Arsenal",
-	"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured"],
+	"requiredBuilding":"Arsenal",
         "requiredTech": "Replaceable Parts"
     },
     {
@@ -2142,15 +2145,15 @@
         "percentStatBonus": {"science": 50},
         "specialistSlots": {"Scientist": 1},
         "maintenance": 3,
-        "requiredBuilding": "Public School",
         "uniques": ["[+50]% [Science] [in this city]"],
+	"requiredBuilding":"Public School",
         "requiredTech": "Plastics"
     },
     {
         "name": "Stadium",
         "happiness": 4,
         "maintenance": 2,
-        "requiredBuilding": "Zoo",
+        "requiredBuilding":"Zoo",
         "requiredTech": "Refrigeration"
     },
     {
@@ -2205,15 +2208,15 @@
         "name": "Medical Lab",
         "maintenance": 3,
         "requiredTech": "Electronics",
-        "requiredBuilding": "Hospital",
         "uniques": ["[25]% Food is carried over after population increases [in this city]"]
+	"requiredBuilding":"Hospital",
     },
     {
         "name": "Nuclear Plant",
         "production": 5,        
         "maintenance": 3,
-        "requiredBuilding": "Factory",
         "uniques": ["[+15]% [Production] [in this city]","Consumes [1] [Uranium]","Only available <in cities without a [Solar Plant]>"],
+	"requiredBuilding":"Factory",
         "requiredTech": "Nuclear Fission"
     },
     {
@@ -2228,8 +2231,8 @@
         "production": 5,        
         "maintenance": 3,
         "requiredTech": "Ecology",
-        "requiredBuilding": "Factory",
-        "uniques": ["[+15]% [Production] [in this city]","Must be next to [Desert]","Only available <in cities without a [Nuclear Plant]>"]
+        "uniques": ["[+15]% [Production] [in this city]","Must be next to [Desert]", "Only available <in cities without a [Nuclear Plant]>"],
+	"requiredBuilding":"Factory"
     },
     {
         "name": "Sydney Opera House",
@@ -2255,8 +2258,8 @@
         "name": "Spaceship Factory",
         "production": 3,
         "cost": 360,
-        "requiredBuilding": "Factory",
         "uniques": ["[+50]% Production when constructing [Spaceship Part] buildings [in this city]","Consumes [1] [Aluminum]"],
+	"requiredBuilding":"Factory",
         "requiredTech": "Robotics"
     },
     {

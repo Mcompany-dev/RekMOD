@@ -294,7 +294,7 @@
         "name": "Cathedrals",
         "type": "Follower",
         "uniques": [
-            "May buy [Cathedral] buildings for [225] [Faith] [in cities following this religion]"
+            "May buy [Cathedral] buildings for [150] [Faith] [in cities following this religion]"
         ]
     },
     {
@@ -304,11 +304,21 @@
             "[+3 Culture, -1 Gold] from every [Temple]"
         ]
     },
+	{
+		"name":"Devoted Elite",
+		"type":"Follower",
+		"uniques":["[+3 Production, +3 Gold]","[-1 Happiness] <in cities with at least [10] [Population]>"]
+	},
+	{
+		"name":"Devout Performers",
+		"type":"Follower",
+		"uniques":["[+1 Culture] from every [Colosseum]","[+2 Culture] from every [Circus]","[+3 Happiness, +4 Culture] from every [Circus Maximus]"]
+	},
     {
         "name": "Divine inspiration",
         "type": "Follower",
         "uniques": [
-            "[+2 Faith] from every [Wonder]"
+            "[+1 Faith, +1 Culture] from every [Wonder]"
         ]
     },
     {
@@ -316,23 +326,37 @@
         "type": "Follower",
         "uniques": [
             "[+1 Food] from every [Shrine]",
-            "[+1 Food] from every [Temple]"
+            "[+2 Food] from every [Temple]"
         ]
     },
+	{
+		"name": "Followers of the Refined Crafts",
+		"type":"Follower",
+		"uniques":[
+		"[+1 Culture, +2 Gold] from every [Mint]",
+		"[+1 Culture, +2 Gold] from every [Gemcutter]",
+		"[+1 Culture, +2 Gold] from every [Brewery]",
+		"[+1 Culture, +2 Gold] from every [Grocer]",
+		"[+1 Culture, +2 Gold] from every [Censer Maker]",
+		"[+1 Culture, +2 Gold] from every [Textile Mill]"]
+	},
+	{
+		"name":"Gurdwaras"
+		"type":"Follower"
+		"uniques":["May buy [Gurdwara] buildings for [195] [Faith] [in cities following this religion]"]
+	},
     {
         "name": "Guruship",
         "type": "Follower",
         "uniques": [
-            "[+2 Production] <if this city has at least [1] specialists>"
+            "[+1 Production, 2 Food] <if this city has at least [1] specialists>"
         ]
     },
-    {
-        "name": "Mandirs",
-        "type": "Follower",
-        "uniques": [
-            "May buy [Mandir] buildings for [270] [Faith] [in cities following this religion]"
-        ]
-    },
+	{
+		"name":"Holy Warriors",
+		"type":"Follower",
+		"uniques":["May buy [Military] units with [Faith] [in cities following this religion]"],
+	},
     {
         "name": "Liturgical Drama",
         "type": "Follower",
@@ -342,10 +366,17 @@
         ]
     },
     {
+        "name": "Mandirs",
+        "type": "Follower",
+        "uniques": [
+            "May buy [Mandir] buildings for [255] [Faith] [in cities following this religion]"
+        ]
+    },
+    {
         "name": "Mosques",
         "type": "Follower",
         "uniques": [
-            "May buy [Mosque] buildings for [150] [Faith] [in cities following this religion]"
+            "May buy [Mosque] buildings for [225] [Faith] [in cities following this religion]"
         ]
     },
     {
@@ -353,27 +384,6 @@
         "type": "Follower",
         "uniques": [
             "May buy [Pagoda] buildings for [195] [Faith] [in cities following this religion]"
-        ]
-    },
-    {
-        "name": "Gurdwaras",
-        "type": "Follower",
-        "uniques": [
-            "May buy [Gurdwara] buildings for [195] [Faith] [in cities following this religion]"
-        ]
-    },
-    {
-        "name": "Synagogues",
-        "type": "Follower",
-        "uniques": [
-            "May buy [Synagogue] buildings for [195] [Faith] [in cities following this religion]"
-        ]
-    },
-    {
-        "name": "Viharas",
-        "type": "Follower",
-        "uniques": [
-            "May buy [Vihara] buildings for [150] [Faith] [in cities following this religion]"
         ]
     },
     {
@@ -399,25 +409,74 @@
         ]
     },
     {
-        "name": "Swords into Ploughshares",
-        "type": "Follower",
-        "uniques": [
-            "[+15]% growth [in this city] <when not at war>"
-        ]
-    },
-    {
         "name": "Religious Community",
         "type": "Follower",
         "uniques": [
             "[+1]% [Production] from every follower, up to [10]%"
         ]
     },
+	{
+		"name":"Sacred Waters"
+		"type":"Follower",
+		"uniques":["[+2 Faith, +1 Food] from every [Garden]","[+1 Happiness] <in [River] tiles>"]
+	}
+    {
+        "name": "Synagogues",
+        "type": "Follower",
+        "uniques": [
+            "May buy [Synagogue] buildings for [195] [Faith] [in cities following this religion]"
+        ]
+    },
+    {
+        "name": "Viharas",
+        "type": "Follower",
+        "uniques": [
+            "May buy [Vihara] buildings for [150] [Faith] [in cities following this religion]"
+        ]
+    },
     ///////////////////////////////////////// Founder beliefs //////////////////////////////////////////
+    {
+        "name": "Ceremonial Burial",
+        "type": "Founder",
+        "uniques": [
+            "[+1 Happiness] from every [Palace]",
+            "[+1 Happiness] for each global city following this religion"
+        ]
+    },
     {
         "name": "Church Property",
         "type": "Founder",
         "uniques": [
-            "[+1 Gold, +1 Culture] for each global city following this religion"
+            "[+2 Gold] for each global city following this religion"
+        ]
+    },
+    {
+        "name": "Dawah",
+        "type": "Founder",
+        "uniques": [
+            "[+4 Culture] from every [Palace]"
+        ]
+    },
+    {
+        "name": "Initiation Rites",
+        "type": "Founder",
+        "uniques": [
+            "[+100 Gold] when a city adopts this religion for the first time (modified by game speed)"
+        ]
+    },
+    {
+        "name": "Messiah",
+        "type": "Founder",
+        "uniques": [
+            "[+25]% Spread Religion Strength <for [Great Prophet] units>",
+            "[-25]% Faith cost of generating Great Prophet equivalents"
+        ]
+    },
+    {
+        "name": "Missionary Zeal",
+        "type": "Founder",
+        "uniques": [
+            "[+25]% Spread Religion Strength <for [Missionary] units>"
         ]
     },
     {
@@ -427,20 +486,6 @@
         // Note2: Changed [Gold] to Gold for Soulinor's suggestion, it works although I am not sure how
         "uniques": [
             "[1]% Gold from every follower, up to [20]%"
-        ]
-    },
-    {
-        "name": "Tithe",
-        "type": "Founder",
-        "uniques": [
-            "[+1 Gold] for every [4] global followers [in all cities]"
-        ]
-    },
-    {
-        "name": "Initiation Rites",
-        "type": "Founder",
-        "uniques": [
-            "[+100 Gold] when a city adopts this religion for the first time (modified by game speed)"
         ]
     },
     {
@@ -458,18 +503,10 @@
         ]
     },
     {
-        "name": "Ceremonial Burial",
+        "name": "Religious Unity",
         "type": "Founder",
-        "uniques": [
-            "[+1 Happiness] from every [Palace]",
-            "[+1 Happiness] for each global city following this religion"
-        ]
-    },
-    {
-        "name": "Dawah",
-        "type": "Founder",
-        "uniques": [
-            "[+4 Culture] from every [Palace]"
+        "uniques":[
+            "[+100]% Natural religion spread [in City-State cities]"
         ]
     },
     {
@@ -477,6 +514,13 @@
         "type": "Founder",
         "uniques": [
             "[+4 Production] from every [Palace]"
+        ]
+    },
+    {
+        "name": "Tithe",
+        "type": "Founder",
+        "uniques": [
+            "[+1 Gold] for every [4] global followers [in all cities]"
         ]
     },
     {
@@ -505,7 +549,7 @@
         "name": "Dharma",
         "type": "Enhancer",
         "uniques": [
-            "[+8 Science] from every [Grand Temple]"
+            "[+10 Science] from every [Grand Temple]"
         ]
     },
     {
@@ -522,13 +566,11 @@
             "[+3 Food, +3 Production, +3 Culture] from every [Palace]"
         ]
     },
-    {
-        "name": "Indulgences",
-        "type": "Enhancer",
-        "uniques": [
-            "[+1 Food, +1 Production, +1 Gold, +1 Culture, +1 Faith] [in cities following this religion]"
-        ]
-    },
+	{
+		"name":"Jizya",
+		"type":"Enhancer",
+		"uniques":["[+6 Production, +6 Gold] for every [Grand Temple]"]
+},
     {
         "name": "Just War",
         "type": "Enhancer",
@@ -551,40 +593,15 @@
         ]
     },
     {
-        "name": "Messiah",
-        "type": "Enhancer",
-        "uniques": [
-            "[+25]% Spread Religion Strength <for [Great Prophet] units>",
-            "[-25]% Faith cost of generating Great Prophet equivalents"
-        ]
-    },
-    {
-        "name": "Missionary Zeal",
-        "type": "Enhancer",
-        "uniques": [
-            "[+25]% Spread Religion Strength <for [Missionary] units>"
-        ]
-    },
-    {
-        "name": "Religious Texts",
-        "type": "Enhancer",
-        "uniques": [
-            "[+34]% Natural religion spread [in all cities]",
-            "[+34]% Natural religion spread [in all cities] <after discovering [Printing Press]>"
-        ]
-    },
-    {
-        "name": "Religious Unity",
-        "type": "Enhancer",
-        "uniques": [
-            "[+100]% Natural religion spread [in City-State cities]"
-        ]
-    },
-    {
         "name": "Reliquary",
         "type": "Enhancer",
         "uniques": [
             "[+50 Faith] whenever a Great Person is expended"
         ]
-    }
+    },
+	{
+		"name":"Unity of the Prophets",
+		"type":"Enhancer",
+		"uniques": ["[+6 Faith, +2 Production] from every [Holy site]"]
+	}
 ]

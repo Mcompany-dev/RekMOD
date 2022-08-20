@@ -127,7 +127,7 @@
 		"upgradesTo": "Airship",
 		"obsoleteTech": "Scientific Theory",
 				"promotions": ["Ignores terrain cost"],
-		"uniques": ["May upgrade to [Archer] through ruins-like effects"],
+		"uniques": ["May upgrade to [Archer] through ruins-like effects","Never appears as a Barbarian unit"],
 		"attackSound": "nonmetalhit"
 	},
 		{
@@ -304,7 +304,7 @@
 		"strength": 10,
 		"cost": 45,
 		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles","Can move after attacking"],
+		"uniques": ["Cannot enter ocean tiles","Can move after attacking","Can only attack [City,Water] units"],
 		"upgradesTo": "Caravel",
 		"obsoleteTech": "Astronomy",
 		"attackSound": "nonmetalhit"
@@ -318,7 +318,7 @@
 		"strength": 10,
 		"cost": 38,
 		"requiredTech": "Sailing",
-		"uniques": ["Can move after attacking"],
+		"uniques": ["Can move after attacking","Can only attack [City,Water] units"],
 		"upgradesTo": "Caravel",
 		"obsoleteTech": "Astronomy",
 		"attackSound": "nonmetalhit"
@@ -330,7 +330,7 @@
 		"movement": 3,
 		"strength": 7,
 		"cost": 40,
-		"uniques": ["Can move after attacking","Cannot enter ocean tiles"],
+		"uniques": ["Can move after attacking","Cannot enter ocean tiles","Can only attack [City,Water] units"],
 		"upgradesTo": "Trireme",
 		"attackSound": "nonmetalhit"
 	},
@@ -341,7 +341,7 @@
 		"movement": 6,
 		"strength": 10,
 		"cost": 45,
-		"uniques": ["Cannot enter ocean tiles","Can move after attacking"],
+		"uniques": ["Cannot enter ocean tiles","Can move after attacking","Can only attack [City,Water] units"],
 		"upgradesTo": "Trireme",
 		"attackSound": "nonmetalhit"
 	},
@@ -1196,7 +1196,7 @@
 		"obsoleteTech": "Military Science",
 		"upgradesTo": "Cavalry",
 		"uniques": ["Can move after attacking","No defensive terrain bonus",
-			"[-33]% Strength <vs cities>","Consumes [1] [Horses]","1 additional attack per turn"],
+			"[-33]% Strength <vs cities>","Consumes [1] [Horses]","1 additional attacks per turn"],
 		"attackSound": "horse"
 	},
 	{
@@ -1314,7 +1314,7 @@
 		"upgradesTo": "Ironclad",
 		"obsoleteTech": "Combustion",
 		"promotions": ["Boarding Party I"],
-		"uniques": ["[+1] Sight","Can move after attacking","May withdraw before melee ([50]%)"],
+		"uniques": ["[+1] Sight","Can move after attacking","May withdraw before melee ([50]%)","Can only attack [City,Water] units"],
 	},
 	
 	// Rennaisance Era
@@ -1329,7 +1329,7 @@
 		"requiredTech": "Astronomy",
 		"upgradesTo": "Ironclad",
 		"obsoleteTech": "Combustion",
-		"uniques": ["[+1] Sight","Can move after attacking","May withdraw before melee ([50]%)"],
+		"uniques": ["[+1] Sight","Can move after attacking","May withdraw before melee ([50]%)","Can only attack [City,Water] units"],
 	},
 	{
 		"name": "Turtle Ship",
@@ -1343,7 +1343,7 @@
 		"requiredTech": "Astronomy",
 		"upgradesTo": "Ironclad",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Can move after attacking","Cannot enter ocean tiles"],
+		"uniques": ["Can move after attacking","Cannot enter ocean tiles","Can only attack [City,Water] units"],
 	},
 	{
 		"name": "Nau", 
@@ -1357,7 +1357,7 @@
 		"requiredTech": "Astronomy",
 		"upgradesTo": "Ironclad",
 		"obsoleteTech": "Combustion",
-		"uniques": ["Can move after attacking","[+1] Sight","May withdraw before melee ([50]%)","Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence"],
+		"uniques": ["Can move after attacking","[+1] Sight","May withdraw before melee ([50]%)","Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence","Can only attack [City,Water] units"],
 	},
 	{
 		"name": "Cannon",
@@ -1478,7 +1478,7 @@
 		"requiredTech": "Navigation",
 		"upgradesTo": "Destroyer",
 		"promotions": ["Coastal Raider I"],
-		"uniques": ["May capture killed [Water] units"],
+		"uniques": ["May capture killed [Water] units","Can only attack [City,Water] units"],
 		"attackSound": "cannon"
 	},
 {
@@ -1492,7 +1492,7 @@
 		"requiredTech": "Navigation",
 		"upgradesTo": "Destroyer",
 		"promotions": ["Coastal Raider I", "Coastal Raider II", "Supply"],
-		"uniques": ["May capture killed [Water] units"]
+		"uniques": ["May capture killed [Water] units","Can only attack [City,Water] units"]
 	},
 	{
 		"name": "Frigate",
@@ -1905,7 +1905,7 @@
 		"requiredTech": "Steam Power",
 		"upgradesTo": "Destroyer",
 		"obsoleteTech": "Combustion",
-		"uniques": ["[+33]% Strength <vs cities>","Double movement in [Coast]","Consumes [1] [Coal]","Can move after attacking"]
+		"uniques": ["[+33]% Strength <vs cities>","Double movement in [Coast]","Consumes [1] [Coal]","Can move after attacking","Can only attack [City,Water] units"]
 	},
 		{
 		"name": "Airship", 
@@ -1968,7 +1968,7 @@
 		"interceptRange": 2,
 		"cost": 420,
 		"requiredTech": "Combustion",
-		"uniques": ["Can move after attacking","Can see invisible [Submarine] units","[40]% chance to intercept air attacks","May withdraw before melee ([80]%)","[+100]% Strength <vs [Submarine] units>"]
+		"uniques": ["Can move after attacking","Can see invisible [Submarine] units","[40]% chance to intercept air attacks","May withdraw before melee ([80]%)","[+100]% Strength <vs [Submarine] units>","Can only attack [City,Water] units"]
 	},
 	{
 		"name": "Battleship",
@@ -2402,13 +2402,13 @@
 		"uniques": ["Can start an [10]-turn golden age", "Can construct [Landmark]","Uncapturable", "Great Person - [Culture]", "Unbuildable"],
 		"movement": 4
 	},
-			{
-		"name": "Krivis",
+		{
+		"name":"Krivis",
 		"replaces": "Great Prophet",
-		"uniqueTo": "Lithuania",
+		"uniqueTo":"Lithuania"
 		"unitType": "Civilian",
-		"uniques": ["Can start an [8]-turn golden age", "Can construct [Sacred Grove]", "Great Person - [Faith]", "Unbuildable","Will not be displayed in Civilopedia"],
-		"movement": 4
+		"uniques": ["Can construct [Sacred Grove]",  "Great Person - [Faith]", "Can start an [8]-turn golden age", "Unbuildable"],
+		"movement": 4,
 	},
 	{
 		"name": "Great Scientist",
@@ -2470,7 +2470,7 @@
 	{
 		"name": "Great Admiral", 
 		"unitType": "WaterCivilian",
-		"uniques": ["[+15]% Strength bonus for [Military] units within [2] tiles","All adjacent units heal [+15] HP when healing","Unbuildable"],
+		"uniques": ["[+15]% Strength bonus for [Military] units within [2] tiles","All adjacent units heal [+15] HP when healing","Unbuildable",],
 		"movement": 6
 	},
 
